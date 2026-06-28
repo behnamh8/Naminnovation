@@ -20,56 +20,87 @@ body{
 /* ---------- NAV ---------- */
 
 .nav{
+
     position:fixed;
+
     top:0;
     left:0;
+
     width:100%;
-    height:72px;
+
+    height:92px;
 
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
 
-    padding:0 60px;
+    padding:0 70px;
 
-    background:rgba(250,249,247,.82);
-    backdrop-filter:blur(14px);
+    background:rgba(250,249,247,.88);
 
-    z-index:1000;
+    backdrop-filter:blur(18px);
 
     border-bottom:1px solid rgba(0,0,0,.05);
+
+    z-index:1000;
 }
 
 .brand{
+
     display:flex;
+
     align-items:center;
-    gap:12px;
 
-    font-weight:600;
-    font-size:18px;
+    gap:18px;
 }
 
-.brand-mark{
-    width:14px;
-    height:14px;
-    border-radius:50%;
-    background:#ff6a2b;
+.logo{
+
+    width:54px;
+
+    height:auto;
 }
 
-nav{
+.brand-text{
+
     display:flex;
-    gap:34px;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    line-height:1;
+
+    font-family:"Century Gothic",
+                "Avenir Next",
+                Arial,
+                sans-serif;
 }
 
-nav a{
-    text-decoration:none;
-    color:#444;
-    font-size:15px;
-    transition:.25s;
+.brand-name{
+
+    font-size:34px;
+
+    font-weight:400;
+
+    letter-spacing:.5px;
+
+    text-transform:lowercase;
 }
 
-nav a:hover{
-    color:#ff6a2b;
+.brand-subtitle{
+
+    font-size:16px;
+
+    letter-spacing:2.5px;
+
+    margin-top:2px;
+
+    text-transform:lowercase;
+
+    color:#666;
 }
 
 /* ---------- HERO ---------- */
