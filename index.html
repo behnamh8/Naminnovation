@@ -9,27 +9,18 @@
 
 <body>
   <header class="nav">
-    <div class="brand">
+    <a href="#" class="brand">
+      <img src="images/logo.png" class="logo" alt="Nami Innovation logo" />
+      <div class="brand-text">
+        <div class="brand-name">nami</div>
+        <div class="brand-subtitle">innovation</div>
+      </div>
+    </a>
 
-    <img src="images/nami-logo.png" class="logo" alt="Nami Innovation">
-
-    <div class="brand-text">
-
-        <div class="brand-name">
-            nami
-        </div>
-
-        <div class="brand-subtitle">
-            innovation
-        </div>
-
-    </div>
-
-</div>
-    <nav>
-      <a href="#approach">Approach</a>
-      <a href="#capabilities">Capabilities</a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
       <a href="#about">About</a>
+      <a href="#blog">Blog</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -40,103 +31,120 @@
         <p class="eyebrow">Boutique innovation partner</p>
         <h1>Innovation built with you.<br><span>Not just for you.</span></h1>
         <p class="lead">
-          We help ambitious companies discover meaningful opportunities, develop better concepts,
-          and build the capability to turn ideas into measurable outcomes.
+          Nami Innovation helps ambitious companies discover meaningful opportunities,
+          develop better concepts, and build the capability to turn ideas into measurable outcomes.
         </p>
         <a class="button" href="#contact">Let’s build together</a>
       </div>
 
-      <div class="orbit" aria-hidden="true">
-        <div class="ring ring-one"></div>
-        <div class="ring ring-two"></div>
-        <div class="dot orange"></div>
-        <div class="dot indigo"></div>
+      <div class="ecosystem" id="ecosystem">
+        <div class="info-panel" id="infoPanel">
+          <h3>Explore the system</h3>
+          <p>Hover over a circle to see how opportunities, insights, technologies, and decisions connect.</p>
+        </div>
+
+        <svg class="connection-layer" viewBox="0 0 600 600">
+          <line id="line1" x1="300" y1="300" x2="300" y2="300"></line>
+          <line id="line2" x1="300" y1="300" x2="300" y2="300"></line>
+          <line id="line3" x1="300" y1="300" x2="300" y2="300"></line>
+        </svg>
+
+        <button class="node node-center" data-title="Better Decisions" data-text="Innovation is not about having more ideas. It is about making better decisions with less uncertainty.">Better<br>Decisions</button>
+
+        <button class="node n1" data-title="Customers" data-text="Understanding real needs, behaviors, frustrations, and moments of value.">Customers</button>
+        <button class="node n2" data-title="Technology" data-text="Connecting emerging technologies to practical use cases and business opportunities.">Technology</button>
+        <button class="node n3" data-title="Market" data-text="Finding where category shifts, competitive gaps, and unmet needs create openings.">Market</button>
+        <button class="node n4" data-title="Concepts" data-text="Turning opportunities into tangible, testable product and service concepts.">Concepts</button>
+        <button class="node n5" data-title="Validation" data-text="Reducing uncertainty through experiments, feedback, prototypes, and evidence.">Validation</button>
+        <button class="node n6" data-title="Capability" data-text="Building the systems, governance, and ways of working that help innovation continue.">Capability</button>
       </div>
     </section>
 
-    <section class="gap">
-      <p class="eyebrow">The innovation gap</p>
-      <h2>Great ideas often fail because organizations lack the structure, alignment, and confidence to move them forward.</h2>
-    </section>
+    <section id="services" class="section">
+      <p class="eyebrow">Services</p>
+      <h2>Practical innovation support for companies ready to move from possibility to progress.</h2>
 
-    <section id="approach" class="approach">
-      <p class="eyebrow">How we work</p>
-      <h2>From opportunity to impact.</h2>
-      <div class="steps">
-        <div class="circle-card">
-          <h3>Discover</h3>
-          <p>Understand customers, markets, technologies, and hidden opportunities.</p>
-        </div>
-        <div class="circle-card">
-          <h3>Define</h3>
-          <p>Frame the right problems and align teams around clear priorities.</p>
-        </div>
-        <div class="circle-card">
-          <h3>Develop</h3>
-          <p>Create concepts, prototypes, and pathways for meaningful innovation.</p>
-        </div>
-        <div class="circle-card">
-          <h3>Validate</h3>
-          <p>Test assumptions, reduce uncertainty, and build confidence.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="capabilities" class="capabilities">
-      <p class="eyebrow">Capabilities</p>
-      <h2>Services designed to help you innovate with confidence.</h2>
-
-      <div class="grid">
-        <div class="service">
+      <div class="service-grid">
+        <div class="service-card">
+          <span>01</span>
           <h3>Discover Opportunities</h3>
           <p>Customer insights, market research, opportunity mapping, strategic foresight, and technology scouting.</p>
         </div>
-        <div class="service">
+
+        <div class="service-card">
+          <span>02</span>
           <h3>Create Better Concepts</h3>
-          <p>Ideation, concept development, design thinking, rapid validation, workshop facilitation, and product strategy.</p>
+          <p>Ideation, design thinking, concept development, rapid validation, workshop facilitation, and product strategy.</p>
         </div>
-        <div class="service">
+
+        <div class="service-card">
+          <span>03</span>
           <h3>Build Innovation Capability</h3>
           <p>Innovation governance, portfolio management, technology roadmaps, stage-gate systems, and operating models.</p>
         </div>
-        <div class="service">
+
+        <div class="service-card">
+          <span>04</span>
           <h3>Accelerate with AI</h3>
-          <p>AI-assisted research, ideation, knowledge management, technology scouting, innovation copilots, and workflows.</p>
+          <p>AI-assisted research, ideation, technology scouting, knowledge management, innovation copilots, and workflows.</p>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about">
-      <p class="eyebrow">About Nami</p>
-      <h2>Experience that bridges strategy, technology, design, and execution.</h2>
-      <p>
-        Nami Innovation is founded on hands-on experience across product development,
-        engineering, design thinking, global innovation leadership, and early-stage concept development.
+    <section id="about" class="section about">
+      <p class="eyebrow">About</p>
+      <h2>Experience across engineering, design, product development, and global innovation leadership.</h2>
+
+      <p class="about-text">
+        Nami Innovation was founded to help small and mid-sized companies access the kind of innovation thinking,
+        structure, and hands-on partnership often found inside larger global organizations — without the overhead
+        of a large consulting firm.
       </p>
 
-      <div class="experience">
-        <span>Solar Turbines</span>
-        <span>American Standard</span>
-        <span>GROHE</span>
-        <span>LIXIL</span>
-        <span>NUK</span>
-        <span>Carnegie Mellon University</span>
-        <span>Rady Children’s Hospital</span>
+      <div class="logo-strip">
+        <div>Solar Turbines</div>
+        <div>American Standard</div>
+        <div>GROHE</div>
+        <div>LIXIL</div>
+        <div>NUK</div>
+        <div>Carnegie Mellon</div>
+        <div>Rady Children’s</div>
       </div>
     </section>
 
-    <section class="principle">
-      <h2>Innovation isn’t about having more ideas.</h2>
-      <p>It’s about making better innovation decisions.</p>
+    <section id="blog" class="section blog">
+      <p class="eyebrow">Blog</p>
+      <h2>Thinking about innovation, product development, AI, and the early messy stages of creating what’s next.</h2>
+
+      <div class="blog-grid">
+        <article>
+          <p>Coming soon</p>
+          <h3>Why innovation is really about better decisions</h3>
+        </article>
+
+        <article>
+          <p>Coming soon</p>
+          <h3>How small companies can build innovation capability without becoming corporate</h3>
+        </article>
+
+        <article>
+          <p>Coming soon</p>
+          <h3>Using AI as a partner in opportunity discovery and concept development</h3>
+        </article>
+      </div>
     </section>
 
-    <section id="contact" class="contact">
-      <div>
-        <p class="eyebrow">Get in touch</p>
-        <h2>Let’s build something great together.</h2>
-      </div>
+    <section id="contact" class="section contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Let’s build something meaningful together.</h2>
+      <p>
+        Whether you are exploring a new product direction, looking for better ideas,
+        or trying to build a stronger innovation process, Nami can help.
+      </p>
       <a class="button" href="mailto:hello@naminnovation.com">hello@naminnovation.com</a>
     </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
